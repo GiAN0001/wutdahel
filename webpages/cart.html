@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Freaks Clothing | Your cart</title>
+        <link rel="icon" type = "img/svg" href="../photos/freak-logo.svg">
+        <link rel="stylesheet" href="../styles/cart-style.css">
+        <script src="https://kit.fontawesome.com/73498a0f31.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header-nav">
+            <nav class="nav-grid">
+                <header>    
+                    <nav>
+                        <a href="main-page.html"><img src="../photos/freak-logo.svg" alt="Logo" class = "logo"></a>
+                        <div class="links">
+                            <a href="../webpages/shop.html">SHOP</a>
+                            <a href="../webpages/about.html">ABOUT</a>
+                            <a href="help.html">HELP</a>
+                                <a href="cart.html" class = "cart">
+                                    <img src="../photos/cart.svg" alt="cart" class = "cartIC">
+                                    CART
+                                </a>
+                        </div>
+                    </nav>
+                </header>
+            </nav>
+        </header>
+        <section class="main">
+            <div class="cart-grid">
+                <nav class="order-summary">
+                    <h2 class="title-order">ORDER TOTAL</h2>
+                    <h2 class="total-price">P 0</h2>
+                </nav>
+                <a href="shop.html" class="order">
+                    <strong class="text02">Start shopping</strong><br>
+                    <small class="text01">cart is empty</small> 
+                </a>
+                <div class="row-shipping">
+                    <span>Shipping Fee</span>
+                    <p class="note">FREE</p>
+                    <span class="price">P 0.00</span>
+                </div>
+                <div class="row-shipping">
+                    <span>TOTAL</span>
+                    <p class="note">PHP</p>
+                    <span class="price">P 0.00</span>
+                </div>
+                <div class="cart-buttons">
+                    <form action="shop.html" class="shop-btn">
+                        <button class="shop-more">CONTINUE SHOPPING</button>
+                    </form>
+                    <form action="checkout.html" class="checkout-btn">
+                        <button class="checkout">PROCEED TO CHECKOUT</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="web-footer">
+            <p class="footer">© 2023 FREAKS CLOTHING</p>
+        </footer>
+
+        <script>
+                const nav = document.querySelector(".header-nav");
+                let lastScrollY = window.scrollY;
+                    window.addEventListener("scroll", () => {
+                        if(lastScrollY  < window.scrollY){
+                            nav.classList.add("nav--hidden");
+                        } else {
+                            nav.classList.remove("nav--hidden");
+                        }
+                        lastScrollY  = window.scrollY;
+                    });
+        </script>
+    </body>
+</html>

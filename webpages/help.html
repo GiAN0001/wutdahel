@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Freaks Clothing | Help</title>
+        <link rel="icon" type = "img/svg" href="../photos/freak-logo.svg">
+        <link rel="stylesheet" href="../styles/help-style.css">
+        <script src="https://kit.fontawesome.com/73498a0f31.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header-nav">
+            <nav class="nav-grid">
+                <header>
+                    <nav>
+                        <a href="main-page.html"><img src="../photos/freak-logo.svg" alt="Logo" class = "logo"></a>
+                        <div class="links">
+                            <a href="../webpages/shop.html">SHOP</a>
+                            <a href="../webpages/about.html">ABOUT</a>
+                            <a href="help.html">HELP</a>
+                                <a href="cart.html" class = "cart">
+                                    <img src="../photos/cart.svg" alt="cart" class = "cartIC">
+                                    CART
+                                </a>
+                        </div>
+                    </nav>
+                </header>
+            </nav>
+        </header>
+        <section class="banner-grid">
+            <div class="banner-img">
+                <img src="../photos/faqs-banner.jpg" alt="faqs banner">
+                    <div class="content-wrapper">
+                        <div class="help-contents">
+                            <div class="contact">
+                                <h1 class="help-title">
+                                    CONTACT
+                                </h1>
+                                    <h2 class="help-questions">
+                                        <div class="question-bg">
+                                        </div>
+                                        HOW CAN I REACH YOU?
+                                    </h2>
+                                    <p class="help-contents">
+                                        Simply email us at <b>freakclothing@gmail.com</b> or give us a call at <b>0999 666 9999</b>
+                                        if you have any concern.
+                                    </p>
+                                    <h2 class="help-questions">
+                                        <div class="question-bg">
+                                        </div>
+                                        DO YOU HAVE A PHYSICAL STORE?
+                                    </h2>
+                                    <p class="help-contents">
+                                        As of now, we only have an online store, if you have any concern, 
+                                        just message us or give us a call. We'll be opening a physical store soon!
+                                    </p>
+                                    <h2 class="help-questions">
+                                        <div class="question-bg">
+                                        </div>
+                                        WHEN CAN I REACH YOU?
+                                    </h2>
+                                    <p class="help-contents">
+                                        You can email us at any time and we will get back to you as soon as we can. 
+                                        You can also call us Monday to Saturday from 10:00 AM to 10:00 PM.
+                                    </p>
+                            </div>
+                            <div class="payment">
+                                <h1 class="help-title">
+                                    PAYMENT
+                                </h1>
+                                <h2 class="help-questions">
+                                    <div class="question-bg">
+                                    </div>
+                                    HOW CAN I PAY MY ORDER?
+                                </h2>
+                                <p class="help-contents">
+                                    Freaks clothing online store accepts GCASH, BPI, MAYA and credit or debit cards. 
+                                </p>
+                                <p class="help-contents">
+                                    You can also pay via cash on delivery! 
+                                </p>
+                                <h2 class="help-questions">
+                                    <div class="question-bg">
+                                    </div>
+                                    WHAT ARE THE AREAS WHERE CASH-ON-DELIVERY IS AVAILABLE?
+                                </h2>
+                                <p class="help-contents">
+                                    Cash on delivery/pick up is available anywhere in the Philippines.
+                                </p>
+                                <h2 class="help-questions">
+                                    <div class="question-bg">
+                                    </div>
+                                    CAN SOMEONE ELSE PICK UP OR PAY MY ORDER/S?
+                                </h2>
+                                <p class="help-contents">
+                                    Definitely, but authorized representative must present a valid ID upon 
+                                    delivery pick up of any of your order/s 
+                                </p>
+                            </div>
+                            <div class="products">
+                                <h1 class="help-title">
+                                    PRODUCTS
+                                </h1>
+                                <h2 class="help-questions">
+                                    <div class="question-bg">
+                                    </div>
+                                    DO YOU RESTOCK THE PRODUCTS THAT HAVE BEEN SOLD OUT?
+                                </h2>
+                                <p class="help-contents">
+                                    We make sure that our products online are both available and in its high quality. 
+                                </p>
+                                <p class="help-contents">
+                                    We do restock the product that have been sold out, follow our socials to 
+                                    see announcements regarding restocking. 
+                                </p>
+                                <h2 class="help-questions">
+                                    <div class="question-bg">
+                                    </div>
+                                    DO YOU HAVE A PRODUCT CARE GUIDE?
+                                </h2>
+                                <p class="help-contents">
+                                    Freaks Cloting proper care guide is located at the branding tag of the product.
+                                    <p>
+                                        <br>A.&nbsp;&nbsp;Be careful with bleach
+                                    </p>
+                                    <p>
+                                            B.&nbsp;&nbsp;Flip The shirt inside out
+                                    </p>
+                                    <p>
+                                            C.&nbsp;&nbsp;Avoid soaking the product
+                                    </p>
+                                    <p>
+                                            D.&nbsp;&nbsp;Give you shirt a rest
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+        </section>
+        <footer class="web-footer">
+            <p class="footer">© 2023 FREAKS CLOTHING</p>
+        </footer>
+
+        <script>
+            const nav = document.querySelector(".header-nav");
+            let lastScrollY = window.scrollY;
+                window.addEventListener("scroll", () => {
+                    if(lastScrollY  < window.scrollY){
+                        nav.classList.add("nav--hidden");
+                    } else {
+                        nav.classList.remove("nav--hidden");
+                    }
+                    lastScrollY  = window.scrollY;
+                });
+        </script>
+    </body>
+</html>

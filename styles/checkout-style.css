@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: budmo;
+    src: url(../fonts/BudmoW00Solid.ttf);
+}
+@font-face {
+    font-family: gothic;
+    src: url(../fonts/GOTHIC.TTF);
+}
+/* main */
+html , body{
+    height: 100%;
+}
+.main{
+    min-height: 100%;
+}
+body{
+    background-image: url(../photos/main-bg.jpg);
+    background-size: cover;
+}
+.logo{
+    width: 90px;
+    padding: 5px;
+}
+.logo:hover{
+    background-color: #fff;
+    transition: .3s ease;
+}
+.header-nav{
+    background: #000000;
+    height: 60px;
+
+}
+.links a{
+    text-decoration: none;
+    font-family: budmo;
+    color: #B52F2F;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 15px;
+    margin-left: 30px;
+}
+.nav-grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(7, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+.cartIC{
+    width: 20px;
+}
+.cart .cartIC:hover{
+    transform: rotate(-10deg);
+    transition: .3s;
+}
+.cart{
+    background-color: #fff;
+    align-items: center;
+    padding: 3px;
+}
+header{
+    grid-column: 2 / span 7;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.links{
+    margin-left: auto;
+}
+.links a:hover{
+    background-color: #fff;
+    transition: .3s;
+}
+.links a:nth-child(4):hover{
+    color: black;
+    transition: .3s;
+}
+/*main*/
+.section-grid{
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(7, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+.wrapper{
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 20px;
+    grid-column: 4 / span 3;
+
+}
+.form-wrapper{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #B52F2F;
+    border-radius: 5px;
+    background-color: none;
+    outline: none;
+    color: #000000;
+    font-size: 1em;
+    font-family: inherit;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: gray;
+    transition: .3s ease-in;
+}
+.inputBox input:valid ~ span, .inputBox input:focus ~ span{
+    color: #000000;
+    transform: translateX(10px) translateY(-7px);
+    font-size: .75em;
+    padding: 0 10px;
+    background-color: #fff;
+}
+.inputBox input:valid, .inputBox input:focus{
+    border: 2px solid #000000;
+}
+.header-title{
+    font-family: budmo;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    background-color: #000000;
+    color: #B52F2F;
+    padding: 5px;
+    text-align: center;
+}
+.info-title{
+    font-family: budmo;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.return{
+    background: none;
+    border: none;
+    color: gray;
+    font-family: budmo;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.placeorder{
+    background-color: #000000;
+    color: #B52F2F;
+    border: none;
+    font-family: budmo;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 15px;
+    width: 200px;
+    cursor: pointer;
+}
+.return:hover{
+    background-color: #000000;
+    color: #B52F2F;
+    transition: .3s;
+}
+.placeorder:hover{
+    background-color: #B52F2F;
+    color: #000000;
+    transition: .3s;
+}
+/* footer */
+.web-footer{
+    margin-top: 50px;
+    background: #000000;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 3px 0px;
+    text-align: center;
+}
+.footer{
+    font-family: budmo;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 3px;
+}

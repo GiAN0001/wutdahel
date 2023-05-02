@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Freaks Clothing | Check out</title>
+        <link rel="icon" type = "img/svg" href="../photos/freak-logo.svg">
+        <link rel="stylesheet" href="../styles/checkout-style.css">
+        <script src="https://kit.fontawesome.com/73498a0f31.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header-nav">
+            <nav class="nav-grid">
+                <header>
+                    <nav>
+                        <a href="main-page.html"><img src="../photos/freak-logo.svg" alt="Logo" class = "logo"></a>
+                        <div class="links">
+                            <a href="../webpages/shop.html">SHOP</a>
+                            <a href="../webpages/about.html">ABOUT</a>
+                            <a href="help.html">HELP</a>
+                                <a href="cart.html" class = "cart">
+                                    <img src="../photos/cart.svg" alt="cart" class = "cartIC">
+                                    CART
+                                </a>
+                        </div>
+                    </nav>
+                </header>
+            </nav>
+        </header>
+        <section class="main">
+            <div class="section-grid">
+                <div class="wrapper">
+                    <h1 class="header-title">
+                        Shipping Details
+                    </h1>
+                    <div class="info-title">
+                        <h2>Personal Information</h2>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>First name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Last name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Phone</span>
+                        </div>
+                    </div>
+                    <div class="info-title">
+                        <h2>Shipping Information</h2>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Address</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Appartmen, suite, etc. (optional)</option></span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Postal Code</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>City</span>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <form action="cart.html">
+                            <button class="return">↞ Return to cart</button>
+                        </form>
+                        <form action="#">
+                            <button class="placeorder">Checkout</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="web-footer">
+            <p class="footer">© 2023 FREAKS CLOTHING</p>
+        </footer>
+
+        <script>
+                const nav = document.querySelector(".header-nav");
+                let lastScrollY = window.scrollY;
+                    window.addEventListener("scroll", () => {
+                        if(lastScrollY  < window.scrollY){
+                            nav.classList.add("nav--hidden");
+                        } else {
+                            nav.classList.remove("nav--hidden");
+                        }
+                        lastScrollY  = window.scrollY;
+                    });
+        </script>
+    </body>
+</html>

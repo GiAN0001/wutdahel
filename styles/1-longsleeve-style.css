@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: budmo;
+    src: url(../fonts/BudmoW00Solid.ttf);
+}
+/* main */
+html, body{
+    height: 100%;
+}
+main{
+    min-height: 100%;
+}
+body{
+    background-image: url(../photos/main-bg.jpg);
+    background-size: cover;
+
+}
+.logo{
+    width: 90px;
+    padding: 5px;
+}
+.logo:hover{
+    background-color: #fff;
+    transition: .3s ease;
+}
+.header-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    height: 60px;
+    transition: .3s;
+}
+.nav--hidden{
+    transform: translateY(calc(-1 * 60px));
+    box-shadow: none; 
+
+}
+.links a{
+    text-decoration: none;
+    font-family: budmo;
+    color: #B52F2F;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 15px;
+    margin-left: 30px;
+}
+.nav-grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(7, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+.cartIC{
+    width: 20px;
+}
+.cart .cartIC:hover{
+    transform: rotate(-10deg);
+    transition: .3s;
+}
+.cart{
+    background-color: #fff;
+    align-items: center;
+    padding: 3px;
+}
+header{
+    grid-column: 2 / span 7;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.links{
+    margin-left: auto;
+}
+.links a:hover{
+    background-color: #fff;
+    transition: .3s;
+}
+.links a:nth-child(4):hover{
+    color: black;
+    transition: .3s;
+}
+/*MAIN*/
+main{
+    margin-top: 120px;
+}
+.prod-img img{
+    height: 600px;
+    width: 700px;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(7, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+.wrapper-main{
+    display: flex;
+    grid-column: 2 / span 7;
+}
+.description-main{
+    background-color: #000000;
+    color: #B52F2F;
+    font-family: budmo;
+    font-size: 20px;
+    padding: 10px;
+}
+.side-content{
+    margin-left: auto;
+}
+.side-content h2{
+    text-align: center;
+    font-family: budmo;
+    color: #B52F2F;
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+.selection-wrapper{
+    display: flex;
+    margin-top: 20px;
+}
+.qntty-wrapper{
+    margin-left: auto;
+}
+.side-content select{
+    width: 195px;
+    padding: 10px;
+    background-color: #000000;
+    border: 0px;
+    color: #B52F2F;
+    font-family: budmo;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+select option{
+    font-size: 20px;
+}
+.addtocart{
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: #B52F2F;
+    font-family: budmo;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border: 0px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.addtocart:hover{
+    background-color: #B52F2F;
+    color: #000000;
+    transition: .3s;
+}
+.size-chart{
+    margin-top: 30px;
+}
+/*related prod*/
+.product-grid{
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(7, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+.container img{
+    height: 400px;
+    width: 400px;
+
+}
+.container{
+    margin-right: 30px;
+    text-decoration: none;
+    font-family: budmo;
+    font-size: 20px
+}
+.wrapper{
+    display: flex;
+    margin-top: 50px;
+    grid-column: 2 / span 7;
+}
+.description{
+    display: flex;
+    background-color: #000000;
+    padding: 5px;
+    color: #B52F2F;
+}
+.price{
+    margin-left: auto;
+}
+.container img:hover{
+    filter: brightness(60%);
+    margin-top: -10px;
+    transition: .5s;
+}
+/*nav bar related*/
+.nav-grid2{
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(7, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+.prod-nav{
+    background-color: #000000;
+    height: 80px;
+    grid-column: 2 / span 7;
+    margin-top: 60px;
+}
+.prod-nav h1{
+    font-family: budmo;
+    color: #fff;
+    font-size: 35px;
+    margin-left: 40px;
+    letter-spacing: 10px;
+}
+/*prod img*/
+
+/*footer*/
+.web-footer{
+    margin-top: 50px;
+    background: #000000;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 3px 0px;
+    text-align: center;
+}
+.footer{
+    font-family: budmo;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 3px;
+}

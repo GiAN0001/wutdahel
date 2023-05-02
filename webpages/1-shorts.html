@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>JNCO Denim Shorts| Freaks Clothing</title>
+        <link rel="icon" type = "img/svg" href="../photos/freak-logo.svg">
+        <link rel="stylesheet" href="../styles/1-shorts-style.css">
+        <script src="https://kit.fontawesome.com/73498a0f31.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header-nav">
+            <nav class="nav-grid">
+                <header>
+                    <nav>
+                        <a href="main-page.html"><img src="../photos/freak-logo.svg" alt="Logo" class = "logo"></a>
+                        <div class="links">
+                            <a href="../webpages/shop.html">SHOP</a>
+                            <a href="../webpages/about.html">ABOUT</a>
+                            <a href="help.html">HELP</a>
+                                <a href="cart.html" class = "cart">
+                                    <img src="../photos/cart.svg" alt="cart" class = "cartIC">
+                                    CART
+                                </a>
+                        </div>
+                    </nav>
+                </header>
+            </nav>
+        </header>
+        <main>
+            <div class="container-grid">
+                <div class="wrapper-main">
+                    <div class="prod-img">
+                        <img src="../photos/products/1-shorts.jpg">
+                        <div class="description-main">
+                            <span>JNCO Denim Shorts</span>
+                        </div>
+                    </div>
+                    <div class="side-content">
+                        <h2 class="price">P 450</h2>
+                        <div class="selection-wrapper">
+                            <div class="size-wrapper">
+                                <select name="size">
+                                    <option selected = "selected">CHOOSE SIZE</option>
+                                    <option> small</option>
+                                    <option> medium</option>
+                                    <option> large</option>
+                                    <option> x-large</option>
+                                </select>
+                            </div>
+                            <div class="qntty-wrapper">
+                                <select name="quantity">
+                                    <option selected = "selected">QUANTITY</option>
+                                    <option> 1</option>
+                                    <option> 2</option>
+                                    <option> 3</option>
+                                    <option> 4</option>
+                                    <option> 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <form action="cart.html" class="add-to-cart">
+                            <button class="addtocart">ADD TO CART</button>
+                        </form>
+                          <img src="../photos/shorts-size-chart.jpg" class = "size-chart">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="prod">
+            <div class="nav-grid2">
+                <nav class="prod-nav">
+                    <h1 class="prod-title">RELATED PRODUCTS</h1>
+                </nav>
+            </div>
+            <div class="products">
+                <div class="product-grid">
+                    <div class="wrapper">
+                        <a href="2-shorts.html" class="container">
+                            <div class="prod-img">
+                                <img src="../photos/products/2-shorts.jpg">
+                            </div>
+                            <div class="description">
+                                <span>TRIPP Shorts</span>
+                                <div class="price">
+                                    <span>P 600</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="3-shorts.html" class="container">
+                            <div class="prod-img">
+                                <img src="../photos/products/3-shorts.jpg">
+                            </div>
+                            <div class="description">
+                                <span>JNCO Black Denim Shorts</span>
+                                <div class="price">
+                                    <span>P 550</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer class="web-footer">
+            <p class="footer">© 2023 FREAKS CLOTHING</p>
+        </footer>
+
+        <script>
+
+            const nav = document.querySelector(".header-nav");
+            let lastScrollY = window.scrollY;
+                window.addEventListener("scroll", () => {
+                    if(lastScrollY  < window.scrollY){
+                        nav.classList.add("nav--hidden");
+                    } else {
+                        nav.classList.remove("nav--hidden");
+                    }
+                    lastScrollY  = window.scrollY;
+                });
+        </script>
+    </body>
+</html>

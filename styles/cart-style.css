@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: budmo;
+    src: url(../fonts/BudmoW00Solid.ttf);
+}
+@font-face {
+    font-family: gothic;
+    src: url(../fonts/GOTHIC.TTF);
+}
+/* main */
+html , body{
+    height: 100%;
+}
+.main{
+    min-height: 100%;
+}
+body{
+    background-image: url(../photos/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo{
+    width: 90px;
+    padding: 5px;
+}
+.logo:hover{
+    background-color: #fff;
+    transition: .3s ease;
+}
+.header-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    height: 60px;
+    transition: .3s;
+}
+.nav--hidden{
+    transform: translateY(calc(-1 * 60px));
+    box-shadow: none; 
+
+}
+.links a{
+    text-decoration: none;
+    font-family: budmo;
+    color: #B52F2F;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 15px;
+    margin-left: 30px;
+}
+.nav-grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(7, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+.cartIC{
+    width: 20px;
+}
+.cart .cartIC:hover{
+    transform: rotate(-10deg);
+    transition: .3s;
+}
+.cart{
+    background-color: #fff;
+    align-items: center;
+    padding: 3px;
+}
+header{
+    grid-column: 2 / span 7;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.links{
+    margin-left: auto;
+}
+.links a:hover{
+    background-color: #fff;
+    transition: .3s;
+}
+.links a:nth-child(4):hover{
+    color: black;
+    transition: .3s;
+}
+/* footer */
+.web-footer{
+    margin-top: 50px;
+    background: #000000;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 3px 0px;
+    text-align: center;
+}
+.footer{
+    font-family: budmo;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+/*main */
+.main{
+    margin-top: 120px;
+}
+.cart-grid{
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(7, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+.order-summary{
+    background-color: #000000;
+    height: 50px;
+    grid-column: 3 / span 5;
+}
+.order-summary h2{
+    font-family: budmo;
+    font-size: 20px;
+    color: #B52F2F;
+    letter-spacing: 1px;
+}
+.title-order{
+    margin-left: 20px;
+}
+.total-price{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.order{
+    grid-column: 3 / span 5;
+    background-color: #B52F2F;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    color: #000000;
+    font-family: budmo;
+    letter-spacing: 3px;
+}
+
+.shopping{
+    text-decoration: none;
+    color: #000000;
+    font-family: budmo;
+    letter-spacing: 1px;
+}
+.text01{
+    font-size: 15px
+}
+.text02{
+    font-size: 30px;
+}
+.order:hover{
+    background-color: #000000;
+    color: #B52F2F;
+    transition: .2s;
+}
+.row-shipping{
+    display: flex;
+    grid-column: 3 / span 5;
+    border: 0.1rem solid gray;
+    font-family: budmo;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+.note{
+    margin-left: auto;
+    margin-right: 10px;
+    opacity: 60%;
+}
+.cart-buttons{
+    display: flex;
+    grid-column: 3 / span 5;
+    margin-top: 20px;
+    align-items: center;
+
+}
+.checkout-btn{
+    margin-left: auto;
+}
+.cart-buttons button{
+    font-family: budmo;
+    letter-spacing: 1px;
+    padding: 15px;
+    border: 0px;
+    cursor: pointer;
+}
+.shop-more{
+    background-color: gray;
+    color: #000000;
+    font-size: 20px;
+}
+.checkout{
+    background-color: #000000;
+    color: #B52F2F;
+    font-size: 40px;
+  
+}
+.shop-more:hover{
+    background-color: #B52F2F;
+    transition: .2s;
+}
+.checkout:hover{
+    background-color: #B52F2F;
+    color: #000000;
+    transition: .2s;
+}
